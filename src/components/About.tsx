@@ -4,13 +4,13 @@ import { COMPANY_CONFIG } from '../config/company';
 
 export const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-20 bg-white dark:bg-[#030F1E] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
           
           {/* Image Side */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#07192E]">
               <img
                 src={COMPANY_CONFIG.images.aboutAdvisory}
                 alt="Atendimento financeiro especializado Fourcred"
@@ -33,15 +33,15 @@ export const About: React.FC = () => {
 
           {/* Text Content Side */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#073B78]/10 text-[#073B78] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#073B78]/10 dark:bg-[#1769AA]/20 text-[#073B78] dark:text-slate-200 text-xs font-bold uppercase tracking-wider">
               <span>Sobre a Fourcred</span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#062B55] leading-tight font-display text-balance">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#062B55] dark:text-white leading-tight font-display text-balance">
               Mais do que soluções financeiras. Somos parceiros das suas conquistas.
             </h2>
 
-            <div className="space-y-4 text-base text-[#344054] leading-relaxed">
+            <div className="space-y-4 text-base text-[#344054] dark:text-slate-300 leading-relaxed">
               <p>
                 Como correspondente bancário da Caixa Econômica Federal, a Fourcred oferece soluções personalizadas em serviços bancários, buscando proporcionar condições competitivas e alternativas adequadas às necessidades de seus clientes.
               </p>
@@ -53,28 +53,28 @@ export const About: React.FC = () => {
             {/* List Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               <div className="flex items-start gap-2.5">
-                <div className="p-1 rounded bg-[#073B78]/10 text-[#073B78] mt-0.5">
+                <div className="p-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] mt-0.5">
                   <Check className="w-4 h-4 text-[#F58220]" />
                 </div>
-                <span className="text-sm font-semibold text-slate-800">Originação de crédito habitacional</span>
+                <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">Originação de crédito habitacional</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <div className="p-1 rounded bg-[#073B78]/10 text-[#073B78] mt-0.5">
+                <div className="p-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] mt-0.5">
                   <Check className="w-4 h-4 text-[#F58220]" />
                 </div>
-                <span className="text-sm font-semibold text-slate-800">Corretagem de seguros integrados</span>
+                <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">Corretagem de seguros integrados</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <div className="p-1 rounded bg-[#073B78]/10 text-[#073B78] mt-0.5">
+                <div className="p-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] mt-0.5">
                   <Check className="w-4 h-4 text-[#F58220]" />
                 </div>
-                <span className="text-sm font-semibold text-slate-800">Consórcios planejados sem juros</span>
+                <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">Consórcios planejados sem juros</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <div className="p-1 rounded bg-[#073B78]/10 text-[#073B78] mt-0.5">
+                <div className="p-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] mt-0.5">
                   <Check className="w-4 h-4 text-[#F58220]" />
                 </div>
-                <span className="text-sm font-semibold text-slate-800">Benefícios de saúde e odontológicos</span>
+                <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">Benefícios de saúde e odontológicos</span>
               </div>
             </div>
 

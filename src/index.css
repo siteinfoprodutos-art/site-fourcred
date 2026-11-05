@@ -14,11 +14,27 @@
 }
 
 @layer base {
+  :root {
+    --bg-main: #F3F6FA;
+    --text-main: #344054;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+  }
+
+  html.dark, body.dark {
+    --bg-main: #030F1E;
+    --text-main: #E2E8F0;
+    --card-bg: #07192E;
+    --card-border: #1E293B;
+    color-scheme: dark;
+  }
+
   html {
     font-family: var(--font-sans);
-    color: #344054;
-    background-color: #F3F6FA;
+    color: var(--text-main);
+    background-color: var(--bg-main);
     scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -26,13 +42,13 @@
   }
 }
 
-/* Custom scrollbar and subtle gradient overlays */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F3F6FA;
+  background: var(--bg-main);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -41,7 +57,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #062B55;
+  background: #F58220;
 }
 
 .gradient-blue-radial {
