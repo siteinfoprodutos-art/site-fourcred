@@ -9,7 +9,7 @@ export const Location: React.FC = () => {
   const currentLocation = locations.find((loc) => loc.id === activeTab) || locations[0];
 
   return (
-    <section className="py-16 sm:py-20 bg-white border-t border-slate-200">
+    <section id="localizacao" className="py-16 sm:py-20 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -19,7 +19,7 @@ export const Location: React.FC = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#062B55] font-display text-balance">
-            Nossas Lojas & Sede Central
+            Nossas Lojas & Sede Central em {locations[0].city}
           </h2>
 
           <p className="text-xs sm:text-base text-slate-600 leading-relaxed font-medium">

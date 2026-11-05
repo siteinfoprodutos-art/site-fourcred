@@ -137,7 +137,7 @@ export const Contact: React.FC = () => {
                   <Store className="w-5 h-5 text-[#F58220]" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-[#073B78] uppercase tracking-wider">Loja Centro</p>
+                  <p className="text-xs font-bold text-[#073B78] uppercase tracking-wider">{locations[1].title}</p>
                   <p className="text-xs font-semibold text-slate-800">
                     {locations[1].street}, {locations[1].complement}
                   </p>

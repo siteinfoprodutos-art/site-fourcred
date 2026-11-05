@@ -1,3 +1,9 @@
+import aboutAdvisoryImage from "../assets/images/about_advisory_1793885652035.jpg";
+import fourcredLogo from "../assets/images/fourcred-logo.png";
+import heroFamilyImage from "../assets/images/hero_family_home_1793885651610.jpg";
+import housingKeysImage from "../assets/images/housing_keys_concept_1793885653104.jpg";
+import portfolioResidentialImage from "../assets/images/portfolio_residential_1793885652256.jpg";
+
 export const COMPANY_CONFIG = {
   name: "FOURCRED",
   fullName: "Fourcred Serviços Financeiros",
@@ -17,20 +23,6 @@ export const COMPANY_CONFIG = {
       id: "central",
       title: "Sede Central",
       badge: "Escritório Central",
-      street: "Av. Pauliceia, 37",
-      complement: "Sala 02",
-      neighborhood: "Laranjeiras / Centro",
-      city: "Franco da Rocha",
-      state: "SP",
-      zipCode: "07840-000",
-      full: "Av. Pauliceia, 37, Sala 02 - Franco da Rocha - SP",
-      mapsUrl: "https://maps.google.com/?q=Av.+Pauliceia,+37,+Sala+02,+Franco+da+Rocha+-+SP",
-      mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.15!2d-46.725!3d-23.328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee2ff4bd675bd%3A0x8bd5fb588cb7e42b!2sAv.%20Pauliceia%2C%2037%20-%20Franco%20da%20Rocha%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-    },
-    {
-      id: "loja-centro",
-      title: "Loja Centro",
-      badge: "Atendimento Presencial",
       street: "Av. Sete de Setembro, 169",
       complement: "Box 7",
       neighborhood: "Centro",
@@ -40,17 +32,31 @@ export const COMPANY_CONFIG = {
       full: "Av. Sete de Setembro, 169, Box 7 - Centro, Franco da Rocha - SP, 07851-120",
       mapsUrl: "https://maps.google.com/?q=Av.+Sete+de+Setembro,+169,+Box+7,+Centro,+Franco+da+Rocha+-+SP,+07851-120",
       mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.26!2d-46.728!3d-23.324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee2ff4bd675bd%3A0x8bd5fb588cb7e42b!2sAv.%20Sete%20de%20Setembro%2C%20169%20-%20Centro%2C%20Franco%20da%20Rocha%20-%20SP%2C%2007851-120!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+    },
+    {
+      id: "loja-centro",
+      title: "Loja Laranjeiras",
+      badge: "Atendimento Presencial",
+      street: "Av. Pauliceia, 37",
+      complement: "Sala 02",
+      neighborhood: "Laranjeiras",
+      city: "Franco da Rocha",
+      state: "SP",
+      zipCode: "07840-000",
+      full: "Av. Pauliceia, 37, Sala 02 - Laranjeiras, Franco da Rocha - SP, 07840-000",
+      mapsUrl: "https://maps.google.com/?q=Av.+Pauliceia,+37,+Sala+02,+Franco+da+Rocha+-+SP",
+      mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.15!2d-46.725!3d-23.328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee2ff4bd675bd%3A0x8bd5fb588cb7e42b!2sAv.%20Pauliceia%2C%2037%20-%20Franco%20da%20Rocha%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
     }
   ],
 
   // Primary address shorthand for footer/metadata
   address: {
-    street: "Av. Pauliceia, 37, Sala 02",
-    neighborhood: "Centro / Laranjeiras",
+    street: "Av. Sete de Setembro, 169, Box 7",
+    neighborhood: "Centro",
     city: "Franco da Rocha",
     state: "SP",
-    zipCode: "07840-000",
-    full: "Sede: Av. Pauliceia, 37, Sala 02 | Loja: Av. Sete de Setembro, 169, Box 7 - Franco da Rocha - SP"
+    zipCode: "07851-120",
+    full: "Sede: Av. Sete de Setembro, 169, Box 7 - Franco da Rocha - SP | Loja: Av. Pauliceia, 37, Sala 02 - Laranjeiras, Franco da Rocha - SP"
   },
 
   businessHours: "Segunda a Sexta: 08:30 às 17:30",
@@ -149,7 +155,7 @@ export const COMPANY_CONFIG = {
     {
       year: "Hoje",
       title: "Expansão de Lojas e Presença Regional",
-      description: "Sede Central na Av. Pauliceia e Loja Centro na Av. Sete de Setembro, consolidando a Fourcred como a maior referência em crédito e seguros da região."
+      description: "Sede Central na Av. Sete de Setembro e loja na Av. Pauliceia, consolidando a Fourcred como referência em crédito e seguros da região."
     }
   ],
 
@@ -197,10 +203,11 @@ export const COMPANY_CONFIG = {
 
   // Image Paths
   images: {
-    heroFamily: "/src/assets/images/hero_family_home_1793885651610.jpg",
-    aboutAdvisory: "/src/assets/images/about_advisory_1793885652035.jpg",
-    portfolioResidential: "/src/assets/images/portfolio_residential_1793885652256.jpg",
-    housingKeys: "/src/assets/images/housing_keys_concept_1793885653104.jpg",
-    uploadedStoreBadge: "/public/assets/aistudio/IMG-20261105-WA0050_92f606b3.jpg"
+    logo: fourcredLogo,
+    heroFamily: heroFamilyImage,
+    aboutAdvisory: aboutAdvisoryImage,
+    portfolioResidential: portfolioResidentialImage,
+    housingKeys: housingKeysImage,
+    uploadedStoreBadge: "/assets/aistudio/IMG-20261105-WA0050_92f606b3.jpg"
   }
 };

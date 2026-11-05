@@ -43,6 +43,7 @@ export const Footer: React.FC = () => {
               <li><a href="#historia" className="hover:text-white transition-colors py-1 inline-block">Nossa História</a></li>
               <li><a href="#servicos" className="hover:text-white transition-colors py-1 inline-block">Serviços</a></li>
               <li><a href="#portfolio" className="hover:text-white transition-colors py-1 inline-block">Portfólio</a></li>
+              <li><a href="#localizacao" className="hover:text-white transition-colors py-1 inline-block">Localização</a></li>
               <li><a href="#contato" className="hover:text-white transition-colors py-1 inline-block">Contato</a></li>
             </ul>
           </div>
@@ -78,11 +79,11 @@ export const Footer: React.FC = () => {
               <div className="pt-2 border-t border-slate-800 space-y-1.5">
                 <p className="flex items-start gap-1.5 text-slate-300">
                   <Building className="w-3.5 h-3.5 text-[#F58220] shrink-0 mt-0.5" />
-                  <span><strong>Sede Central:</strong> {locations[0].street}, {locations[0].complement}</span>
+                  <span><strong>Sede Central:</strong> {locations[0].street}, {locations[0].complement} - {locations[0].city} / {locations[0].state}</span>
                 </p>
                 <p className="flex items-start gap-1.5 text-slate-300">
                   <Store className="w-3.5 h-3.5 text-[#F58220] shrink-0 mt-0.5" />
-                  <span><strong>Loja Centro:</strong> {locations[1].street}, {locations[1].complement}</span>
+                  <span><strong>{locations[1].title}:</strong> {locations[1].street}, {locations[1].complement} - {locations[1].city} / {locations[1].state}</span>
                 </p>
               </div>
 

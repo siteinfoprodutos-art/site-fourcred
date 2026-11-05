@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
             {/* Store Location Quick Pill on Mobile */}
             <div className="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200 shadow-sm text-xs text-slate-700 font-semibold">
               <MapPin className="w-4 h-4 text-[#F58220] shrink-0" />
-              <span className="truncate">Sede: Av. Pauliceia, 37 | Loja: Av. Sete de Setembro, 169</span>
+              <span className="truncate">{COMPANY_CONFIG.address.full}</span>
             </div>
 
             {/* CTAs - Stacked Full Width on Mobile with min 48px height */}
