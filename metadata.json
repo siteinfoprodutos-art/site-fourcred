@@ -1,0 +1,6 @@
+{
+  "name": "Fourcred - Redesign Institucional Premium",
+  "description": "Versão completamente renovada do site Fourcred. Correspondente Caixa Econômica Federal especialista em Crédito Habitacional, Seguros, Consórcios e Benefícios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

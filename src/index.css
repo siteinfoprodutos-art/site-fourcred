@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-blue-brand: #073B78;
+  --color-blue-deep: #062B55;
+  --color-blue-secondary: #1769AA;
+  --color-orange-brand: #F58220;
+  --color-orange-light: #FFA34D;
+  --color-gray-light: #F3F6FA;
+  --color-gray-dark: #344054;
+  --font-sans: 'Manrope', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #344054;
+    background-color: #F3F6FA;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar and subtle gradient overlays */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F6FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #073B78;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #062B55;
+}
+
+.gradient-blue-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(23, 105, 170, 0.15) 0%, rgba(6, 43, 85, 0) 70%);
+}
+
+.gradient-card-border {
+  background: linear-gradient(135deg, rgba(23, 105, 170, 0.2) 0%, rgba(245, 130, 32, 0.2) 100%);
+}
