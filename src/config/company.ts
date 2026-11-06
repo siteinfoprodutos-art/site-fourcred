@@ -194,9 +194,15 @@ export const COMPANY_CONFIG = {
   // Testimonials
   testimonials: [
     {
-      quote: "Empresa Fourcred nota 10. Um super atendimento, pessoal atencioso tira todas as dúvidas e deixa tudo bem claro. Parabéns. E um agradecimento especial ao Matheus, excelente profissional.",
-      author: "Cliente Atendido pela Fourcred",
-      highlight: "Atendimento Nota 10",
+      quote: "Eu tinha algumas dúvidas e fui muito bem atendido. A equipe explicou tudo com calma e me senti mais seguro para seguir com o processo. Recomendo!",
+      author: "André de Sousa",
+      highlight: "Atendimento atencioso",
+      rating: 5
+    },
+    {
+      quote: "Gostei bastante do atendimento. Foram atenciosos, responderam minhas perguntas e me acompanharam durante o processo. Foi uma experiência muito boa!",
+      author: "Lucas Guedes",
+      highlight: "Acompanhamento próximo",
       rating: 5
     }
   ],

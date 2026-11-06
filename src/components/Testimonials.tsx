@@ -18,12 +18,12 @@ export const Testimonials: React.FC = () => {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Veja o depoimento publicado por clientes atendidos pela nossa equipe.
+            Veja o que clientes atendidos pela nossa equipe têm a dizer.
           </p>
         </div>
 
         {/* Testimonials List */}
-        <div className="max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {COMPANY_CONFIG.testimonials.map((item, idx) => (
             <div
               key={idx}
