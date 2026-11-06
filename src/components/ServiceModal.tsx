@@ -11,8 +11,8 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose }) 
   if (!service) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/75 backdrop-blur-sm animate-in fade-in duration-200">
+      <div className="relative w-full max-w-lg bg-white dark:bg-[#07192E] rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden text-slate-900 dark:text-slate-100">
         
         {/* Header Bar */}
         <div className="bg-[#062B55] text-white p-6 relative">
@@ -32,21 +32,21 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose }) 
 
         {/* Content Body */}
         <div className="p-6 space-y-6">
-          <p className="text-sm text-slate-600 leading-relaxed font-medium">
+          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
             {service.description}
           </p>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#073B78] mb-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#073B78] dark:text-[#F58220] mb-3">
               Diferenciais desta solução:
             </h4>
             <div className="space-y-2.5">
               {service.highlights.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2.5">
-                  <div className="p-1 rounded bg-[#073B78]/10 text-[#073B78] shrink-0 mt-0.5">
+                  <div className="p-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 text-[#F58220]" />
                   </div>
-                  <span className="text-xs font-semibold text-slate-800">{item}</span>
+                  <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">{item}</span>
                 </div>
               ))}
             </div>

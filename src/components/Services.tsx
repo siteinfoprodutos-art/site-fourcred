@@ -22,20 +22,20 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 bg-white dark:bg-[#030F1E] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#073B78]/10 text-[#073B78] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] dark:text-slate-200 text-xs font-bold uppercase tracking-wider">
             <span>Soluções Financeiras</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#062B55] font-display text-balance">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#062B55] dark:text-white font-display text-balance">
             Soluções inteligentes para realizar seus objetivos.
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto">
             Conheça nossas soluções e descubra como podemos ajudar você a conquistar seus planos com mais tranquilidade e segurança.
           </p>
         </div>
@@ -48,7 +48,7 @@ export const Services: React.FC = () => {
             return (
               <div
                 key={service.id}
-                className="group relative flex flex-col justify-between p-7 rounded-2xl bg-[#F3F6FA] border border-slate-200/80 hover:border-[#073B78] hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1"
+                className="group relative flex flex-col justify-between p-7 rounded-2xl bg-[#F3F6FA] dark:bg-[#07192E] border border-slate-200/80 dark:border-slate-800 hover:border-[#073B78] dark:hover:border-[#F58220] hover:bg-white dark:hover:bg-[#0A223F] transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1"
               >
                 <div>
                   {/* Top Icon */}
@@ -62,21 +62,21 @@ export const Services: React.FC = () => {
                   </p>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-[#062B55] mb-3 font-display">
+                  <h3 className="text-xl font-bold text-[#062B55] dark:text-white mb-3 font-display">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6 font-medium">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Card Actions */}
-                <div className="pt-4 border-t border-slate-200/60 flex flex-col gap-2">
+                <div className="pt-4 border-t border-slate-200/60 dark:border-slate-800 flex flex-col gap-2">
                   <button
                     onClick={() => setSelectedService(service)}
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white border border-slate-200 group-hover:border-[#073B78] text-[#073B78] font-bold text-xs transition-colors hover:bg-[#073B78] hover:text-white"
+                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 group-hover:border-[#073B78] dark:group-hover:border-[#F58220] text-[#073B78] dark:text-white font-bold text-xs transition-colors hover:bg-[#073B78] hover:text-white dark:hover:bg-[#F58220]"
                   >
                     <span>Saiba mais</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -86,7 +86,7 @@ export const Services: React.FC = () => {
                     href={COMPANY_CONFIG.getWhatsAppLink(service.whatsappMessage)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 text-[11px] font-bold text-slate-600 hover:text-[#F58220] transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 text-[11px] font-bold text-slate-600 dark:text-slate-400 hover:text-[#F58220] dark:hover:text-[#F58220] transition-colors"
                   >
                     <MessageSquare className="w-3.5 h-3.5" />
                     <span>Atendimento direto</span>
