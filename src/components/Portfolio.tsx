@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Building2, Home, Shield, Sparkles } from 'lucide-react';
+import { Award, Building2, Home, Shield } from 'lucide-react';
 import { COMPANY_CONFIG } from '../config/company';
 
 export const Portfolio: React.FC = () => {
@@ -80,29 +80,7 @@ export const Portfolio: React.FC = () => {
         </div>
 
         {/* Real Estate Showcase */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
-          <div className="rounded-2xl bg-white dark:bg-[#030F1E] p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row gap-6 items-center">
-            <img
-              src={COMPANY_CONFIG.images.portfolioResidential}
-              alt="Residencial Ibiza, Bruno de Sá e Play"
-              className="w-full md:w-48 h-44 rounded-xl object-cover shrink-0"
-              referrerPolicy="no-referrer"
-            />
-            <div className="space-y-2">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] dark:text-slate-200 text-[11px] font-bold uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-[#F58220]" />
-                Empreendimentos Habitacionais
-              </span>
-              <h4 className="text-lg font-bold text-[#062B55] dark:text-white">
-                Residenciais Ibiza, Bruno de Sá e Play
-              </h4>
-              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
-                Estruturação e originação de crédito bancário para empreendimentos de grande impacto comunitário, simplificando o financiamento para todos os compradores.
-              </p>
-            </div>
-          </div>
-
+        <div className="max-w-3xl mx-auto">
           <div className="rounded-2xl bg-white dark:bg-[#030F1E] p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row gap-6 items-center">
             <img
               src={COMPANY_CONFIG.images.housingKeys}
@@ -123,7 +101,6 @@ export const Portfolio: React.FC = () => {
               </p>
             </div>
           </div>
-
         </div>
 
         {/* Historical Disclaimer Note */}
