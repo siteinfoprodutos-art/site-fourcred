@@ -43,11 +43,11 @@ export const Portfolio: React.FC = () => {
               <div className="p-3 w-12 h-12 rounded-xl bg-[#073B78]/10 dark:bg-white/10 text-[#073B78] dark:text-white mb-4 flex items-center justify-center">
                 <Home className="w-6 h-6 text-[#073B78] dark:text-[#1769AA]" />
               </div>
-              <p className="text-2xl font-extrabold text-[#062B55] dark:text-white font-display">+300</p>
+              <p className="text-2xl font-extrabold text-[#062B55] dark:text-white font-display">+900</p>
               <p className="text-xs font-bold text-[#073B78] dark:text-[#1769AA] uppercase tracking-wider mt-0.5">Famílias Atendidas</p>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-4 border-t border-slate-100 dark:border-slate-800 pt-3">
-              Sonho do imóvel próprio realizado no período histórico inicial.
+              Sonho do imóvel próprio realizado com assessoria da Fourcred.
             </p>
           </div>
 

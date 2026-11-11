@@ -167,7 +167,7 @@ export const COMPANY_CONFIG = {
       description: "Reconhecimento oficial da Caixa Econômica Federal pela qualidade técnica, volume de crédito concedido e índice de satisfação dos clientes."
     },
     {
-      title: "+300 Famílias Atendidas",
+      title: "+900 Famílias Atendidas",
       period: "Histórico Portfólio",
       description: "Centenas de famílias que realizaram o sonho da casa própria com o acompanhamento próximo e especializado da equipe Fourcred."
     },
